@@ -41,7 +41,7 @@ for l in range(0,3):
 
 for l in range(0,3):
     for c in range(0,3):
-        print(f'{matriz[l][c]}', end ='')
+        print(f'{matriz[l][c]}', end =' ')
     print()
 
 soma1,soma2 = soma_diagonal_principal_e_secundaria(matriz)

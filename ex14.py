@@ -4,9 +4,9 @@ def consumo_litro(distancia,litros):
     if calculo < 8:
         return print('Venda o carro!')
     elif (calculo >=8 and calculo <= 12):
-        return print('Econômico!')
+        return print(f'Econômico! {calculo}')
     elif calculo > 12:
-        return print('Super econômico!')
+        return print(f'Super econômico! {calculo} ')
 
 kilometros  = input('digite a distancia em kilometros: ')
 if kilometros.replace('.','', 1).isdigit():

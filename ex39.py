@@ -1,14 +1,14 @@
 def troque(A,B):
     troca1 = A
-    troca2 = B
+    
 
-    A = troca2
+    A = B
     B = troca1
 
     return  A,B
 C= 0
 D= 0
-num1 = input(' digite um numeroreal: ')
+num1 = input(' digite um numero real: ')
 if num1.replace('.','', 1).replace('-','').isdigit():
     num1 = float(num1)
     num2 = input('digite um numero real: ')
