@@ -1,31 +1,22 @@
-# def triangulo_centralizado(num):
-    
-#    for l in range(1, num +1):
-#         for c in range(1, l +1): 
-#             print('*', end =' ')
-#         print() 
-#    for l1 in range(num+1, 1+1, -1):
-#        for c1 in range(l1+1, 3, -1):
-#            print('*',end = '')
-#        
-#        print()  
-       
-    
-# num = int(input('digite um numero: '))
-# triangulo_centralizado(num)
+def triangulo(numero):
 
 
+    print()
+    if (numero > 0) and (numero // 1 == numero):
+        for i in range(numero+1):
 
-triangulo = False
-num = int(input('num: '))
-while triangulo != True:
-    for l in range(1, num +1):
-        for c in range(1, l +1): 
-            print('*', end =' ')
-        print() 
-        
-    for l1 in range(num+1, 1+1, -1):
-        for c1 in range(l1+1, 3, -1):
-            print('*',end = ' ')
-        print()  
-    triangulo = True   
+            # Aqui irá informar a quantidade de espaçamento que se deve dar em cada linha
+            # A primeira linha sempre possue um maior espaçamento
+            for j in range(numero):
+
+                # Por exemplo: Se o valor da variável número for 6, o valor de i for 1 e o de j for 5
+                # então ele irá imprimir a primeira linha, pois 1 = 6 - 5
+                if i == numero-j:
+                    print((" " * j) + ("*" * (2*i-1)))
+
+    else:
+        print("Número inválido")
+
+
+num = int(input("Digite um número: "))
+triangulo(num)

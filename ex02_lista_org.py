@@ -1,5 +1,6 @@
 
 def data_extenso(dia,mes,ano):
+    mesExtenso =''
     if mes == 1:
         mesExtenso = 'janeiro'
     elif mes == 2:
